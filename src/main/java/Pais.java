@@ -17,7 +17,7 @@ public class Pais {
 	public String getNombre() {
 		return nombre;
 	}
-	public static String paisMasVendedor() {
+	public static Pais paisMasVendedor() {
 		int cont=0;
 		Pais masVendedor=null;
 		for(Pais i:listaPaises) {
@@ -26,6 +26,6 @@ public class Pais {
 				masVendedor=i;
 			}	
 		}
-		return  masVendedor.getNombre();
+		return  masVendedor;
 	}
 }

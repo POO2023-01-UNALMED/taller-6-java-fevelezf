@@ -26,7 +26,7 @@ public class Fabricante {
 	public Pais getPais() {
 		return pais;
 	}
-	public static String fabricaMayorVentas() {
+	public static Fabricante fabricaMayorVentas() {
 		int cont=0;
 		Fabricante masVendedora=null;
 		for(Fabricante i:listaFabric) {
@@ -35,7 +35,7 @@ public class Fabricante {
 				masVendedora=i;
 			}	
 		}
-		return  masVendedora.getNombre();
+		return  masVendedora;
 	}
 	
 
